@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="content">
+    <h1>Taxonomies</h1>
+    <p>
+        {% for item in terms %}
+            {{ <taxonomy_entry name={item.name} permalink={item.permalink} /> }}
+        {% endfor %}
+    </p>
+</div>
+{% endblock content %}

@@ -1,0 +1,55 @@
+{% component box() -%}
+<div class="box">
+    {{ body }}
+</div>
+{%- endcomponent box %}
+
+{% component toc(rootconfig) %}
+<div class="toc">
+    <!--<p>Table of Contents</p>-->
+    {% if rootconfig.toc %}
+        <ul>
+        {% for h1 in rootconfig.toc %}
+            <li>
+                <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+                {% if h1.children %}
+                    <ul>
+                        {% for h2 in h1.children %}
+                            <li>
+                                <a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+</div>
+{% endcomponent toc %}
+
+{% component sitenav() -%}
+<div class="sitenav">
+    <a href="/">~</a><span>/</span>
+    <a href="/about">about</a><span>/</span>
+    <a href="/posts">posts</a><span>/</span>
+    <a href="/bits">bits</a><span>/</span>
+    <a href="/projects">projects</a>
+</div>
+{%- endcomponent sitenav %}
+
+{% component pagelink(page) -%}
+<div class="pagelink">
+    <div>
+        <p>{{ page.date }}</p>
+        <p><a href="{{ page.permalink | safe }}">{{ page.title }}</a></p>
+    </div>
+    <!--{% if page.summary %}
+    <p class="summary">{{ page.summary | truncate(length=50) }}</p>
+    {% endif %}-->
+</div>
+{% endcomponent pagelink %}
+
+{% component taxonomy_entry(name, permalink) %}
+<span class="taxonomy_entry"><a href="{{ permalink | safe }}">{{ name }}</a></span>
+{% endcomponent taxonomy_entry %}

@@ -1,0 +1,104 @@
+base_url = "https://siru.ink"
+title = "Siru's Aperiodic Thoughts"
+description = "musings and thought that siru shares with the digital world"
+default_language = "en"
+# theme = ""  # has to be disabled if no theme present in themes folder
+output_dir = "public"
+preserve_dotfiles_in_output = false
+compile_sass = true
+minify_html = true
+ignored_content = []  # ignored content folder files/slugs
+skip_content_templating = []  #ignore tera content in these files in the content directory
+ignored_static = []  # static files that are not copied to output directory...why???
+generate_feeds = true
+exclude_paginated_pages_in_sitemap = "none"
+feed_filenames = ["atom.xml"]
+# feed_limit = 20  # has to be disabled to include all articles in feed
+hard_link_static = false
+author = "Siru"
+# The taxonomies to be rendered for the site and their configuration of the default languages
+# Example:
+#     taxonomies = [
+#       {name = "tags", feed = true}, # each tag will have its own feed
+#       {name = "tags"}, # you can have taxonomies with the same name in multiple languages
+#       {name = "categories", paginate_by = 5},  # 5 items per page for a term
+#       {name = "authors"}, # Basic definition: no feed or pagination
+#     ]
+#
+taxonomies = [
+    { name = "tags", feed = true }
+]
+# taxonomy_root = "blog"  # has to be disabled to link taxonomies to root path
+build_search_index = false
+generate_sitemap = true
+generate_robots_txt = true
+
+
+[markdown]
+render_emoji = true
+# external_links_class =  # adds css class to outgoing external links
+external_links_target_blank = false
+external_links_no_follow = true
+external_links_no_referrer = true
+external_links_external = true
+smart_punctuation = true
+definition_list = false  # parsing disabled...what are definition lists?
+lazy_async_image = false
+bottom_footnotes = true
+#     > [!NOTE]
+#     > alert note
+# will result in the following generated HTML:
+#     <blockquote class="markdown-alert-note">
+#     <p>alert note</p>
+#     </blockquote>
+github_alerts = true  # supports markdown-alert-note/-tip/-important/-warning/-caution
+insert_anchor_links = "none"
+
+
+[markdown.highlighting]
+error_on_missing_language = true
+style = "class"
+theme = "github-light"
+# light_theme = ""  # has to be disabled if using single theme
+# dark_theme = ""  # has to be disabled if using single theme
+extra_grammars = []
+extra_themes = []
+data_attr_position = "pre"
+add_color_scheme = true
+
+
+[link_checker]
+skip_prefixes = [
+    "http://[2001:db8::]/",
+]
+skip_anchor_prefixes = [
+    "https://caniuse.com/",
+]
+internal_level = "error"
+external_level = "error"
+
+
+[slugify]
+paths = "on"
+taxonomies = "on"
+anchors = "on"
+paths_keep_dates = false
+
+[search]
+include_title = true
+include_description = false
+include_date = false
+include_path = false
+include_content = true
+# truncate_content_length = 100  # has to be disabled to include everything
+# Search index format: "elasticlunr_javascript", "elasticlunr_json", "fuse_javascript", "fuse_json"
+index_format = "elasticlunr_javascript"
+
+
+[translations]
+
+
+[languages]
+
+
+[extra]
