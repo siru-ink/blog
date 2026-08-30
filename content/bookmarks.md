@@ -80,5 +80,6 @@ _mail [at] siru [dot] ink_.
 * Less-known SQL features: [link](https://slicker.me/sqlite/features.htm)
 * Bloom filters: [link](https://samwho.dev/bloom-filters?palette=tol#bf0)
 * Simple coding project ideas: [link](https://github.com/codecrafters-io/build-your-own-x)
+* Quantifying Colour: [link](https://ekunazanu.foo/lab/quantifying-colour/)
 
 [^1]: Apparently Twitter now has an article instead of just a tweet function?
