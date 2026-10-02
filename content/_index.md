@@ -2,7 +2,7 @@
 title = "Siru's Aperiodic Thoughts"
 +++
 Thoughts and streams of consciousness about my daily interactions with the
-modern digital life. Also find me on [Forgejo](https://code.siru.ink/siru) (for
+modern digital life. Also find me on [Forgejo](https://code.siru.ink/siru-ink) (for
 projects) and [Xing](https://www.xing.com/profile/Nathaniel_Boynick/) (for
 work). There is also [GitHub](https://github.com/siru-ink) and
 [LinkedIn](https://linkedin.com/in/nboynick), for people on these services. Or
