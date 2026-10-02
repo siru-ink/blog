@@ -21,5 +21,5 @@ about me for anyone interested in my capabilities:
 > Currently open to backend or systems-oriented roles in Europe.
 
 ... and also my resume in
-[German](https://www.files.siru.ink/siru/german-cv.pdf) and
+[German](https://www.files.siru.ink/siru/cv-de-boynick-nathaniel.pdf) and
 [English](https://www.files.siru.ink/siru/usa-style-cv.pdf).
