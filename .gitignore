@@ -1,0 +1,2 @@
+# Do not track the public output folder from the zola build framework
+/public
