@@ -12,8 +12,9 @@ if you want to poke into my private life and see what things I find interesting,
 Also, since I am currently looking for work, here is a concise version of the
 about me for anyone interested in my capabilities:
 
-> Backend-focused software developer working with Python (Django) and Go, with
-> experience building SaaS applications and operating in Linux environments.
+> Backend-focused software developer working with Rust (Axum), Go (Gin), and
+> Python (Django), with experience building SaaS applications and operating in
+> Linux environments.
 >
 > I focus on designing simple, reliable systems and have a strong interest in
 > how software behaves at the system level.
